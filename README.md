@@ -4,13 +4,18 @@ to run your website or SPA inside and app :tada:
 I will provide PWA features later, i'm looking right now for a partner 
 with an experience with Cordova plugins and Objective C, to be fast.
 
+## WIP
+
+- Add linters
+- Add Service Workers support 
+- Add Dev and Prod env variables for tests with localhost url 
+- Write a better doc for a very simple deployment for !mobile developers
+
 ## Main plugins used
 
 - Offline / Online detection
 - Webview shrinks on IOS instead of keyboard overflow
 - Autofill login credentials on your app 
-
-More details inside `coniofig.xml`
 
 ## Configuration
 
