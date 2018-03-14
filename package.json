@@ -1,0 +1,43 @@
+{
+  "name": "com.yourapp.mobile",
+  "version": "0.1.0",
+  "displayName": "yourapp",
+  "cordova": {
+    "platforms": [
+      "browser",
+      "android",
+      "ios"
+    ],
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-network-information": {},
+      "cordova-plugin-wkwebview-engine": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-remote-injection": {},
+      "cordova-plugin-secure-storage": {},
+      "cordova-plugin-dialogs": {},
+      "cordova.plugins.diagnostic": {},
+      "cordova-custom-config": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-keyboard": {}
+    }
+  },
+  "dependencies": {
+    "cordova-android": "~6.1.2",
+    "cordova-browser": "~4.1.0",
+    "cordova-custom-config": "^3.3.0",
+    "cordova-ios": "^4.5.4",
+    "cordova-plugin-device": "^1.1.7",
+    "cordova-plugin-dialogs": "^1.3.4",
+    "cordova-plugin-keyboard": "^1.2.0",
+    "cordova-plugin-network-information": "^1.3.4",
+    "cordova-plugin-remote-injection": "^0.4.1",
+    "cordova-plugin-secure-storage": "^2.6.8",
+    "cordova-plugin-splashscreen": "^4.1.0",
+    "cordova-plugin-statusbar": "^2.4.1",
+    "cordova-plugin-whitelist": "^1.3.3",
+    "cordova-plugin-wkwebview-engine": "^1.1.4",
+    "cordova.plugins.diagnostic": "^3.9.1"
+  }
+}

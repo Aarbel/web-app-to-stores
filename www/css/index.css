@@ -1,0 +1,265 @@
+html {
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
+    background-color: #060d2d;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    padding-bottom: env(safe-area-inset-bottom);
+    background-color: #060d2d;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+}
+
+/*----- Svg loader classes ------*/
+
+.clovis-overlay {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: #060d2d;
+    transition: opacity 0.3s ease-in, visibility 1s ease-in ;
+}
+.clovis-overlay.load {
+    opacity: 1;
+    visibility: visible;
+}
+
+.image-offline {
+    display: inline-block;
+    opacity: 0;
+    color: #FFF;
+    text-align: center;
+    -webkit-user-select: none;
+    cursor: default;
+    animation: appear 0.6s 0.6s ease-in forwards;
+    margin-bottom: 5rem;
+}
+
+.image-offline img {
+    width: 280px;
+}
+
+.textmessage {
+    margin-left: -3px;
+    position: absolute;
+    opacity: 0;
+    left: 50%;
+    top: 80%;
+    color: #FFF;
+    font-size: 16px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: default;
+    transform: translate(-50%, -80%);
+    animation: appear2 0.6s 0.6s ease-in forwards;
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.8);
+}
+.textmessage2 {
+    opacity: 0;
+    padding : 1rem;
+    top: 75%;
+    color: #FFF;
+    font-size: 1.1rem;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: default;
+    animation: appear3 0.6s 0.6s ease-in forwards;
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.8);
+}
+
+.textmessage2 button {
+    width: 100%;
+    box-shadow: 0.5px 0.5px 1px rgba(0,0,0,.5);
+    background: #00b16a;
+    color: #fff;
+    pointer-events: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: .5em 1em;
+    font-weight: 700;
+    border: none;
+    vertical-align: middle;
+    border-radius: 0.2rem;
+    font-family: inherit;
+    font-size: inherit;
+    height: 2.5em;
+    -webkit-appearance: button;
+    text-transform: none;
+    line-height: 1.15;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.textmessage2 button:hover{
+    box-shadow: inset 0 -0.15em #007e4b;
+}
+
+/*----- Svg loader classes ------*/
+/*----- Garbadge that could be used later ------*/
+
+.loaderContainer {
+    position: absolute;
+    margin-top: -10px;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    width: 0px;
+    height: 0px;
+    transform: translate(-50%, -50%) rotate(-21deg);;
+    transform-origin: center center;
+}
+.loaderContainer {
+    animation: appear 0.5s 0.2s ease-out forwards, load 1.7s 0.7s linear infinite;
+}
+
+#idloaderContainer{
+    opacity: 0;
+    visibility: visible;
+}
+
+#idloaderContainer.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loaderContainer.load .dot {
+    opacity: 1;
+}
+.loaderContainer.load .crs {
+    opacity: 1;
+}
+.loaderContainer.load .crs.topr {
+    transform: translate(50%, -50%) scale(0.5);
+}
+.loaderContainer.load .crs.topl {
+    transform: translate(-50%, -50%) scale(0.5);
+}
+.loaderContainer.load .crs.botr {
+    transform: translate(50%, 50%) scale(0.5);
+}
+.loaderContainer.load .crs.botl {
+    transform: translate(-50%, 50%) scale(0.5);
+}
+.loaderContainer .dot {
+    height: 10px;
+    width: 10px;
+    background-color: #01172d;
+    top: 50%;
+    left: 50%;
+    display:none;
+    transform: translate(-50%, -50%);
+    transition: opacity .2s ease-in;
+    opacity: 0;
+}
+.loaderContainer .crs {
+    opacity: 0;
+    display:block;
+    width: 0px;
+    height: 0px;
+    background-color: black;
+    position: absolute;
+    transition: all 0.5s ease;
+}
+.loaderContainer .crs.topr {
+    margin-left: -50px;
+    margin-top: -50px;
+    transform: translate(2vw, -5vh) scale(0.5);
+}
+.loaderContainer .crs.topl {
+    margin-left: -50px;
+    margin-top: -50px;
+    transform: translate(-2vw, -5vh) scale(0.5);
+}
+.loaderContainer .crs.botr {
+    margin-left: -50px;
+    margin-top: -50px;
+    transform: translate(2vw, 5vh) scale(0.5);
+}
+.loaderContainer .crs.botl {
+    margin-left: -50px;
+    margin-top: -50px;
+    transform: translate(-2vw, 5vh) scale(0.5);
+}
+
+.loaderContainer .feuille1 {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 216;
+}
+.loaderContainer .feuille2 {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 216;
+}
+.loaderContainer.load .feuille1 {
+    stroke-dashoffset: 0;
+    animation: draw1 0.7s 0.5s ease-out forwards;
+}
+.loaderContainer.load .feuille2 {
+    stroke-dashoffset: 0;
+    animation: draw2 0.7s 0.5s ease-out forwards;
+}
+
+.charging-ellipsis{
+    color: white;
+    font-size: 16px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    animation: ellipsis steps(4,end) 1200ms infinite;
+    width: 0px;
+}
+
+@keyframes ellipsis {
+    to {
+        width: 1.25em;
+    }
+}
+@keyframes appear {
+    0%   { opacity: 0; }
+    100%  { opacity: 1; }
+}
+@keyframes appear2 {
+    0%   { opacity: 0; }
+    100%  { opacity: 0.6; }
+}
+@keyframes appear3 {
+    0%   { opacity: 0; }
+    100%  { opacity: 0.7; }
+}
+
+@keyframes draw1 {
+    100% {
+        stroke-dashoffset: 190;
+    }
+}
+@keyframes draw2 {
+    100% {
+        stroke-dashoffset: -190;
+    }
+}
+@keyframes load {
+    0% {
+        transform: scale(1) rotate(-21deg);
+    }
+    50% {
+        transform: scale(0.8) rotate(339deg);
+    }
+    100% {
+        transform: scale(1) rotate(699deg);
+    }
+}
