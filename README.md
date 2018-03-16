@@ -1,5 +1,4 @@
-This repo is based on Cordova and you just have 1 javascript configuration file
-to run your Web App or SPA inside a Native App :tada: 
+This repo is based on Cordova. Just run your Web App or SPA inside a Native App :tada: 
 
 **I'll provide PWA features later, i'm looking right now for a partner 
 with an experience with Cordova plugins and Objective C / Java to complete this repo : https://github.com/phonegap/phonegap-plugin-pwa.**
