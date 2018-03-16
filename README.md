@@ -10,8 +10,8 @@ Apple guidelines :
 This rule is quite balanced if your web app just allows restricted url access and provides a really reactive and responsive app-like experience. Many companies have their app on the stores with this trick.
 
 
-I will provide PWA features later, i'm looking right now for a partner 
-with an experience with Cordova plugins and Objective C / Java.
+**I'll provide PWA features later, i'm looking right now for a partner 
+with an experience with Cordova plugins and Objective C / Java.**
 
 ## WIP
 
