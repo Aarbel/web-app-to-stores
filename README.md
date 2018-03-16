@@ -1,5 +1,5 @@
 This repo is based on Cordova and you just have 1 javascript configuration file
-to run your website or SPA inside and app :tada: 
+to run your Web App or SPA inside a Native App :tada: 
 
 **Will Apple approve the app if it just wraps a site?**
 ```
