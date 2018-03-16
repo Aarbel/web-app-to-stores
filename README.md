@@ -1,18 +1,20 @@
 This repo is based on Cordova and you just have 1 javascript configuration file
 to run your Web App or SPA inside a Native App :tada: 
 
-**Will Apple approve the app if it just wraps a site?**
+**I'll provide PWA features later, i'm looking right now for a partner 
+with an experience with Cordova plugins and Objective C / Java to complete this repo : https://github.com/phonegap/phonegap-plugin-pwa.**
+
+## About Stores, especially Apple
+
+Will Apple approve the app if it just wraps a site ?
 ```
 Apple guidelines : 
 …
 2.12 Apps that are not very useful, unique, are simply web sites bundled as Apps, or do not provide any lasting 
 entertainment value may be rejected
 ```
-This rule is quite balanced if your web app just allows restricted url access and provides a really reactive and responsive app-like experience. Many companies have their app on the stores with this approach, in my case that worked.
+So this rule is quite balanced if your web app just allows restricted url access and provides a really reactive and responsive app-like experience. Many companies have their app on the stores with this approach, in my case that worked.
 
-
-**I'll provide PWA features later, i'm looking right now for a partner 
-with an experience with Cordova plugins and Objective C / Java.**
 
 ## WIP
 
