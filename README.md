@@ -5,7 +5,8 @@ to run your Web App or SPA inside a Native App :tada:
 ```
 Apple guidelines : 
 …
-2.12 Apps that are not very useful, unique, are simply web sites bundled as Apps, or do not provide any lasting entertainment value may be rejected
+2.12 Apps that are not very useful, unique, are simply web sites bundled as Apps, or do not provide any lasting 
+entertainment value may be rejected
 ```
 This rule is quite balanced if your web app just allows restricted url access and provides a really reactive and responsive app-like experience. Many companies have their app on the stores with this approach, in my case that worked.
 
