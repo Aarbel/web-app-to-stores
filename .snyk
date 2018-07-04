@@ -1,0 +1,16 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.12.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:lodash:20180130':
+    - cordova-ios > plist > xmlbuilder > lodash:
+        patched: '2018-07-04T06:56:45.385Z'
+    - cordova-ios > cordova-common > plist > xmlbuilder > lodash:
+        patched: '2018-07-04T06:56:45.385Z'
+    - cordova-android > cordova-common > plist > xmlbuilder > lodash:
+        patched: '2018-07-04T06:56:45.385Z'
+    - cordova-custom-config > plist > xmlbuilder > lodash:
+        patched: '2018-07-04T06:56:45.385Z'
+    - cordova-custom-config > xcode > simple-plist > plist > xmlbuilder > lodash:
+        patched: '2018-07-04T06:56:45.385Z'
